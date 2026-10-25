@@ -1,0 +1,162 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263449;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background: linear-gradient(135deg, #1769aa, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #1769aa;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #0b477a;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    color: #1769aa;
+    margin-bottom: 15px;
+}
+
+/* Service list */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Form labels and input fields */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #4a90e2;
+    border-color: #1769aa;
+}
+
+/* Buttons */
+button {
+    margin-top: 18px;
+    padding: 12px 20px;
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0b477a;
+}
+
+/* Results */
+#result,
+#order-result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #eef6ff;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
